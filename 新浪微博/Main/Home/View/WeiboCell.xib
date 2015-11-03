@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="192" id="KGk-i7-Jjw" customClass="WeiboCell">
+            <rect key="frame" x="0.0" y="-1" width="475" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ekv-Fb-fbb">
+                        <rect key="frame" x="8" y="8" width="46" height="58.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58.5" id="3E8-La-GXO"/>
+                            <constraint firstAttribute="width" constant="46" id="Sre-4m-asg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEc-ak-WAs">
+                        <rect key="frame" x="69" y="15" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="3X4-BN-kOU"/>
+                            <constraint firstAttribute="height" constant="21" id="9KA-c3-h00"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转发" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-sY-gvU">
+                        <rect key="frame" x="194" y="14" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Ee3-NU-iDe"/>
+                            <constraint firstAttribute="height" constant="21" id="qr8-vr-WoH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN5-8k-Y6A">
+                        <rect key="frame" x="284" y="15" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="09o-Ib-VyV"/>
+                            <constraint firstAttribute="height" constant="21" id="RAK-sG-f60"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来源" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lma-CX-GVQ">
+                        <rect key="frame" x="421" y="162" width="26" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="b4w-Kg-cks"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UOV-sY-gvU" firstAttribute="leading" secondItem="NEc-ak-WAs" secondAttribute="trailing" constant="55" id="6li-tP-KST"/>
+                    <constraint firstItem="NEc-ak-WAs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="9WA-0T-trV"/>
+                    <constraint firstItem="vN5-8k-Y6A" firstAttribute="leading" secondItem="UOV-sY-gvU" secondAttribute="trailing" constant="48" id="KWx-WD-g5a"/>
+                    <constraint firstItem="NEc-ak-WAs" firstAttribute="leading" secondItem="ekv-Fb-fbb" secondAttribute="trailing" constant="15" id="PzS-3b-RRU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lma-CX-GVQ" secondAttribute="trailing" constant="20" id="SDH-i3-70M"/>
+                    <constraint firstItem="ekv-Fb-fbb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Y5l-MD-9UM"/>
+                    <constraint firstItem="vN5-8k-Y6A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="epE-5V-l46"/>
+                    <constraint firstItem="UOV-sY-gvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="gXg-lR-W6N"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lma-CX-GVQ" secondAttribute="bottom" constant="0.5" id="mHn-tN-AMO"/>
+                    <constraint firstItem="ekv-Fb-fbb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="z4u-SS-rUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="comment" destination="vN5-8k-Y6A" id="Dsa-hI-PKb"/>
+                <outlet property="headImage" destination="ekv-Fb-fbb" id="1b4-0W-uNU"/>
+                <outlet property="nickName" destination="NEc-ak-WAs" id="0yX-e6-aAq"/>
+                <outlet property="rePost" destination="UOV-sY-gvU" id="s0j-XE-RLs"/>
+                <outlet property="scor" destination="Lma-CX-GVQ" id="7cF-el-g49"/>
+            </connections>
+            <point key="canvasLocation" x="308.5" y="121"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
